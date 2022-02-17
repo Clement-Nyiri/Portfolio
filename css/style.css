@@ -8707,7 +8707,7 @@ textarea.form-control-lg {
   backdrop-filter: blur(20px); }
 
 #navbar {
-  padding-bottom: 20%; }
+  padding-bottom: 5%; }
 
 #Projects {
   text-align: center; }
@@ -8727,7 +8727,7 @@ a:hover {
   text-align: center;
   text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.767);
   padding-bottom: 15%;
-  padding-top: 10%; }
+  padding-top: 9%; }
 
 h2, .h2 {
   font-size: 2.8em; }
