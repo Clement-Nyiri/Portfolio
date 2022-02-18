@@ -5,11 +5,11 @@
     color: white;
     max-width: 1800px;
     width: 100%;
-    font-size: 2em; /* A modifier */
     position: relative;
     background-color: rgba(2, 0, 1, 0.507);
     padding: 0;
     margin : 0;
+    text-align: center;
 }
 
 #background{
@@ -31,16 +31,37 @@
     backdrop-filter: blur(20px);
 }
 
+#presentation{
+    text-align: center;
+    text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.767);
+    padding-bottom: 15%;
+    padding-top: 9%;
+    font-size: 2em;
+}
+
+h2{
+    font-size: 2.8em;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.767);
+}
+
 #navbar{
     padding-bottom: 5%;
+    font-size: 2em;
 }
 
-#Projects{
-    text-align: center;
+.card{
+    font-size: 1em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgba(245, 245, 220, 0);
+    border: 0;
 }
 
-#About{
-    text-align: center;
+.card-img-top{
+    border-radius: 20px;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.9;
 }
 
 a{
@@ -51,15 +72,4 @@ a{
 
 a:hover{
     color:rgba(218, 216, 216, 0.979)
-}
-
-#presentation{
-    text-align: center;
-    text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.767);
-    padding-bottom: 15%;
-    padding-top: 9%;
-}
-
-h2{
-    font-size: 2.8em;
 }
