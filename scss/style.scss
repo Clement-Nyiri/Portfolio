@@ -73,3 +73,19 @@ a{
 a:hover{
     color:rgba(218, 216, 216, 0.979)
 }
+
+#imagelien{
+    margin-top: 10%;
+    padding-bottom: 10%;
+}
+
+.description{
+    margin-top: 10%;
+    font-size: 1.8em;
+}
+
+.imageProject{
+    max-height: 500px;
+    max-width: 500px;
+    object-fit : cover;
+}
