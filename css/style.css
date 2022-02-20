@@ -8720,6 +8720,12 @@ h2, .h2 {
   padding-bottom: 5%;
   font-size: 2em; }
 
+.home {
+  position: absolute;
+  top: 1rem;
+  left: 5px;
+  font-size: 1.8em; }
+
 .card {
   font-size: 1em;
   margin-top: 10%;
@@ -8731,7 +8737,7 @@ h2, .h2 {
   border-radius: 20px;
   height: 200px;
   object-fit: cover;
-  opacity: 0.9; }
+  opacity: 0.8; }
 
 a {
   text-decoration: none;
@@ -8751,8 +8757,11 @@ a:hover {
   font-size: 1.8em; }
 
 .imageProject {
-  max-height: 500px;
-  max-width: 500px;
+  max-height: 600px;
+  max-width: 600px;
   object-fit: cover; }
+
+#links {
+  padding-top: 4%; }
 
 /*# sourceMappingURL=style.css.map */

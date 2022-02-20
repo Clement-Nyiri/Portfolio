@@ -10,7 +10,7 @@ class Project {
 
         var adapt = document.createElement ("div")
         var Name= document.getElementById("project");
-        var inner = '<h2 class="title pt-4"><u>'+this.title+'</u></h2>\
+        var inner1 = '<h2 class="title pt-4"><u>'+this.title+'</u></h2>\
                     <div class="row" id="description">\
                         <p class="description">'+this.description+'</p>\
                     </div>\
@@ -18,27 +18,34 @@ class Project {
                         <div class="col-6">\
                             <img class="imageProject" src="images/project'+this.id+'.png" alt="project'+this.id+'">\
                         </div>\
-                        <div class="col-6 pt-5">\
-                            <p><a href="'+this.links[0]+'">Github Link</a></p>\
-                            <p><a href="'+this.links[1]+'">See it live</a></p>\
-                        </div>\
-                    </div>'
-                    adapt.innerHTML = inner;
-                    Name.appendChild(adapt)
+                        <div class="col-6" id="links">\
+                            <p><a href="'+this.links[0]+'">Github Link</a></p>';
+                        if(this.links[1] == ""){
+                            inner1 = inner1 + '<p class="d-none"><a href="'+this.links[1]+'">See it live</a></p>\
+                            <p><a href="projects.html">Return to projects</a></p>\
+                            </div>\
+                            </div>';
+                        }  else {
+                            inner1 = inner1 + '<p><a href="'+this.links[1]+'">See it live</a></p>\
+                            <p><a href="projects.html">Return to projects</a></p>\
+                            </div>\
+                        </div>';
+                        }
+                    adapt.innerHTML = inner1; 
+                    Name.appendChild(adapt);
     }
     
 }
 
 const queryStringUrlId = window.location.search;
 const idPage = queryStringUrlId.slice(1);
-console.log(idPage)
 
 const description1 = "This project was done during my formation with OpenClassrooms. I had to create a reactive website for a hotel reservation website using only HTML and CSS";
 const title1 = "Turn Mock-ups Into a Web Page with HTML & CSS";
 const links1 = ["https://github.com/Clement-Nyiri/ClementNyiri_2_28122020","https://clement-nyiri.github.io/ClementNyiri_2_28122020"];
 
 const description2 = "This project was done during my formation with OpenClassrooms. My goal was to create a reactive website for a restaurant booking company using a model, the keypoint here was to make every animation as it was on the models, except for the loading one, which was up to me to create";
-const title2 = "Integrate a mobile website with animations in CSSs";
+const title2 = "Integrate a mobile website with animations in CSS";
 const links2 = ["https://github.com/Clement-Nyiri/ClementNyiri_3_17022021","https://clement-nyiri.github.io/ClementNyiri_3_17022021"];
 
 const description3 = "This project was done during my formation with OpenClassrooms. The goal was to optimise the SEO part of the website, and find all bad practices made during the creation of the website (contrast, responsive design, W3C checks, etc..)<br/> NB: I cannot show the poorly made website, so I will link the corrected versions ";
@@ -69,7 +76,8 @@ if(idPage == 1){
     new Project(idPage, title5, description5, links5);
 } else if(idPage == 6){
     new Project(idPage, title6, description6, links6);
-} /*else{
-    alert('This project does not exist... yet :)')
+} else{
+    alert('This project does not exist... yet :)\
+    You will be redirect to the home page')
     window.location.replace("index.html");
-}*/
+}
