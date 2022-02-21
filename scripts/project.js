@@ -19,14 +19,14 @@ class Project {
                             <img class="imageProject" src="images/project'+this.id+'.png" alt="project'+this.id+'">\
                         </div>\
                         <div class="col-6" id="links">\
-                            <p><a href="'+this.links[0]+'">Github Link</a></p>';
+                            <p><a href="'+this.links[0]+'" target="_blank" rel="noopener noreferrer">Github Link</a></p>';
                         if(this.links[1] == ""){
-                            inner1 = inner1 + '<p class="d-none"><a href="'+this.links[1]+'">See it live</a></p>\
+                            inner1 = inner1 + '<p class="d-none"><a href="'+this.links[1]+'" target="_blank" rel="noopener noreferrer">See it live</a></p>\
                             <p><a href="projects.html">Return to projects</a></p>\
                             </div>\
                             </div>';
                         }  else {
-                            inner1 = inner1 + '<p><a href="'+this.links[1]+'">See it live</a></p>\
+                            inner1 = inner1 + '<p><a href="'+this.links[1]+'" target="_blank" rel="noopener noreferrer">See it live</a></p>\
                             <p><a href="projects.html">Return to projects</a></p>\
                             </div>\
                         </div>';
