@@ -92,11 +92,31 @@ a:hover{
 }
 
 .imageProject{
-    max-height: 600px;
+    max-height: 300px;
     max-width: 600px;
     object-fit : cover;
 }
 
 #links{
     padding-top: 4%;
+}
+
+#about{
+    text-align: center;
+    text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.767);
+    padding-bottom: 15%;
+    padding-top: 9%;
+    font-size: 2em;
+}
+
+#skills h2{
+    text-align: start;
+    margin-left: 35%;
+}
+
+ul{
+    list-style-type: circle;
+    text-align: start;
+    margin-left: 35%;;
+    font-size: 1.6em;
 }
